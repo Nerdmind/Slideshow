@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="rsrc/main.css">
+	<script src="rsrc/main.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			for(let i = 0, slideshows = document.getElementsByClassName("slideshow"); i < slideshows.length; ++i) {
+				new Slideshow(slideshows[i]);
+			}
+		}, false);
+	</script>
+	<title>Slideshow</title>
+</head>
+<body>
+	<main>
+		<div class="slideshow" data-time="8000">
+			<div class="prev fa fa-chevron-left"></div>
+			<ul>
+				<!-- Example SVG images from https://openclipart.org/user-detail/StudioFibonacci -->
+				<li class="show"><img src="pics/00.svg" alt="" /></li>
+				<li class="hide"><img src="pics/01.svg" alt="" /></li>
+				<li class="hide"><img src="pics/02.svg" alt="" /></li>
+				<li class="hide"><img src="pics/03.svg" alt="" /></li>
+				<li class="hide"><img src="pics/04.svg" alt="" /></li>
+				<li class="hide"><img src="pics/05.svg" alt="" /></li>
+				<li class="hide"><img src="pics/06.svg" alt="" /></li>
+			</ul>
+			<div class="next fa fa-chevron-right"></div>
+		</div>
+	</main>
+</body>
+</html>
